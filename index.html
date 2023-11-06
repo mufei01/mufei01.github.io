@@ -59,7 +59,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-10-26 14:18:33',
+  postUpdate: '2023-11-06 13:24:17',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -251,7 +251,26 @@ Token准备操作1.进入设置
 Typroa设置这部分按需设置
 
 图片上传失败原因强烈推荐把所有内容清空，然后手打上去，key除外
-0.修改host！！！ ...</div><a class="blog-slider__button" href="posts/f2c18243/" alt="Github图床+Picgo+typroa+CDN加速">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/32e64cde/" title="美化你的博客文章"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.jsdelivr.net/gh/JoeMax01/CDN@main/img202308281050614.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2021-07-12</span><a class="blog-slider__title" href="posts/32e64cde/" alt="美化你的博客文章">美化你的博客文章</a><div class="blog-slider__text">文章样式多彩引用标签
+0.修改host！！！ ...</div><a class="blog-slider__button" href="posts/f2c18243/" alt="Github图床+Picgo+typroa+CDN加速">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/505131a/" title="PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.jsdelivr.net/gh/JoeMax01/CDN@main/img202308281054992.png" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-12</span><a class="blog-slider__title" href="posts/505131a/" alt="PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决">PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决</a><div class="blog-slider__text">情况还原按照Plank_Pi（LicheePI）联网教程后(稚晖君planck_Pi游玩笔记_LyCraft98的博客-CSDN博客)，可以短暂的让板子连上网络，但是过一会就会断开，将设备断开然后再连接上，就又能够ssh到板子并且可以联网
+
+解决方法短暂解决（重启后就失效）1/etc/init.d/network-manager stop
+
+长久解决现在虚拟机内输入指令1ifconfig
+
+
+记住inet后面的值
+禁用VM虚拟机的DHCP分配工具栏那边：编辑-&amp;gt;虚拟网络编辑器，关闭箭头的那项，记得记住此时IP
+
+设置当前系统的网卡虚拟机上右键-&amp;gt;设置,将网卡换到NAT那个
+
+设置系统固定IP12cd /etc/netplanls
+
+找到这个***.yaml文件
+
+12sudo vim ****.yaml没有vim的话 先执行sudo apt install vim
+
+添加或修改内容
+123456789101112network:     ethernets:         ens33:             addresses:             - 192.16 ...</div><a class="blog-slider__button" href="posts/505131a/" alt="PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/32e64cde/" title="美化你的博客文章"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.jsdelivr.net/gh/JoeMax01/CDN@main/img202308281050614.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2021-07-12</span><a class="blog-slider__title" href="posts/32e64cde/" alt="美化你的博客文章">美化你的博客文章</a><div class="blog-slider__text">文章样式多彩引用标签
 12345678910111213141516171819202122232425&amp;gt; Primary&amp;lt;div class=&amp;quot;success&amp;quot;&amp;gt;&amp;gt; Success&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;warning&amp;quot;&amp;gt;&amp;gt; Warning&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;danger&amp;quot;&amp;gt;&amp;gt; Danger&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;info&amp;quot;&amp;gt;&amp;gt; Info&amp;lt;/div&amp;gt;
 
 
@@ -297,26 +316,7 @@ Info
 
 
 
-修改设置效果生成1 ...</div><a class="blog-slider__button" href="posts/32e64cde/" alt="美化你的博客文章">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/505131a/" title="PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.jsdelivr.net/gh/JoeMax01/CDN@main/img202308281054992.png" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-12</span><a class="blog-slider__title" href="posts/505131a/" alt="PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决">PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决</a><div class="blog-slider__text">情况还原按照Plank_Pi（LicheePI）联网教程后(稚晖君planck_Pi游玩笔记_LyCraft98的博客-CSDN博客)，可以短暂的让板子连上网络，但是过一会就会断开，将设备断开然后再连接上，就又能够ssh到板子并且可以联网
-
-解决方法短暂解决（重启后就失效）1/etc/init.d/network-manager stop
-
-长久解决现在虚拟机内输入指令1ifconfig
-
-
-记住inet后面的值
-禁用VM虚拟机的DHCP分配工具栏那边：编辑-&amp;gt;虚拟网络编辑器，关闭箭头的那项，记得记住此时IP
-
-设置当前系统的网卡虚拟机上右键-&amp;gt;设置,将网卡换到NAT那个
-
-设置系统固定IP12cd /etc/netplanls
-
-找到这个***.yaml文件
-
-12sudo vim ****.yaml没有vim的话 先执行sudo apt install vim
-
-添加或修改内容
-123456789101112network:     ethernets:         ens33:             addresses:             - 192.16 ...</div><a class="blog-slider__button" href="posts/505131a/" alt="PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div><div id="topPostGroup"><div class="top-group-list-item"><div class="post_cover left_radius"><a href="posts/1022efac/" title="Arduino的学习"><span class="top-group-text">荐</span><img class="post_bg" alt="Arduino的学习" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.jsdelivr.net/gh/JoeMax01/CDN@main/img202308281048056.png" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="posts/1022efac/" title="Arduino的学习">Arduino的学习</a></div></div><div class="top-group-list-item"><div class="post_cover left_radius"><a href="posts/f2c18243/" title="Github图床+Picgo+typroa+CDN加速"><span class="top-group-text">荐</span><img class="post_bg" alt="Github图床+Picgo+typroa+CDN加速" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.jsdelivr.net/gh/JoeMax01/CDN@main/img202308281049404.png" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="posts/f2c18243/" title="Github图床+Picgo+typroa+CDN加速">Github图床+Picgo+typroa+CDN加速</a></div></div><div class="top-group-list-item"><div class="post_cover left_radius"><a href="posts/32e64cde/" title="美化你的博客文章"><span class="top-group-text">荐</span><img class="post_bg" alt="美化你的博客文章" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.jsdelivr.net/gh/JoeMax01/CDN@main/img202308281050614.jpg" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="posts/32e64cde/" title="美化你的博客文章">美化你的博客文章</a></div></div><div class="top-group-list-item"><div class="post_cover left_radius"><a href="posts/505131a/" title="PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决"><span class="top-group-text">荐</span><img class="post_bg" alt="PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.jsdelivr.net/gh/JoeMax01/CDN@main/img202308281054992.png" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="posts/505131a/" title="PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决">PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决</a></div></div><div class="top-group-list-none"></div><div class="top-group-list-none"></div><div class="top-group-list-none"></div></div></div></div></div><script>function initBlogSlider() {
+修改设置效果生成1 ...</div><a class="blog-slider__button" href="posts/32e64cde/" alt="美化你的博客文章">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div><div id="topPostGroup"><div class="top-group-list-item"><div class="post_cover left_radius"><a href="posts/1022efac/" title="Arduino的学习"><span class="top-group-text">荐</span><img class="post_bg" alt="Arduino的学习" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.jsdelivr.net/gh/JoeMax01/CDN@main/img202308281048056.png" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="posts/1022efac/" title="Arduino的学习">Arduino的学习</a></div></div><div class="top-group-list-item"><div class="post_cover left_radius"><a href="posts/f2c18243/" title="Github图床+Picgo+typroa+CDN加速"><span class="top-group-text">荐</span><img class="post_bg" alt="Github图床+Picgo+typroa+CDN加速" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.jsdelivr.net/gh/JoeMax01/CDN@main/img202308281049404.png" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="posts/f2c18243/" title="Github图床+Picgo+typroa+CDN加速">Github图床+Picgo+typroa+CDN加速</a></div></div><div class="top-group-list-item"><div class="post_cover left_radius"><a href="posts/505131a/" title="PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决"><span class="top-group-text">荐</span><img class="post_bg" alt="PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.jsdelivr.net/gh/JoeMax01/CDN@main/img202308281054992.png" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="posts/505131a/" title="PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决">PlanckPi(LicheePi)使用虚拟机成功联网后过一会自动断开解决</a></div></div><div class="top-group-list-item"><div class="post_cover left_radius"><a href="posts/32e64cde/" title="美化你的博客文章"><span class="top-group-text">荐</span><img class="post_bg" alt="美化你的博客文章" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.jsdelivr.net/gh/JoeMax01/CDN@main/img202308281050614.jpg" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="posts/32e64cde/" title="美化你的博客文章">美化你的博客文章</a></div></div><div class="top-group-list-none"></div><div class="top-group-list-none"></div><div class="top-group-list-none"></div></div></div></div></div><script>function initBlogSlider() {
   var swiper = new Swiper(".blog-slider", {
     passiveListeners: true,
     spaceBetween: 30,
